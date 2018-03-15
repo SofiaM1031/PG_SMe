@@ -1,3 +1,10 @@
+#NAME - Fred Flintstone
+#USERNAME - Flintstones31@gmail.com
+#PASS - FredFlintstone7
+
+
+
+
 import pyautogui as pg
 import time
 
@@ -10,7 +17,7 @@ symbols = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
 
 pg.hotkey('ctrl', 'winleft', 'd')
 pg.hotkey('winleft')
-pg.typewrite('chrome\n',.3)
+pg.typewrite('chrome\n',.5)
 
 pg.hotkey('winleft', 'up')
 pg.hotkey('winleft', 'up')
@@ -23,7 +30,7 @@ pg.hotkey('tab')
 pg.hotkey('tab')
 
 #Name
-time.sleep(2)
+time.sleep(.2)
 
 counter=0
 while counter < 15:
@@ -31,7 +38,7 @@ while counter < 15:
     counter += 1
 
 #Last
-time.sleep(2)
+time.sleep(.2)
 
 pg.hotkey('tab')
 
@@ -42,7 +49,7 @@ while counter < 15:
 
 
 #Username
-time.sleep(2)
+time.sleep(.2)
 
 pg.hotkey('tab')
 
@@ -52,7 +59,7 @@ while counter < 15:
     counter += 1
 
 #Password
-time.sleep(2)
+time.sleep(.2)
     
 pg.hotkey('tab')
 pg.hotkey('tab')
@@ -69,16 +76,74 @@ while counter < 15:
 #password saved as A
 
 #Confirm Password
-time.sleep(2)
+time.sleep(.2)
 pg.hotkey('tab')
 
-time.sleep(2)
+time.sleep(.2)
 pg.typewrite(pw)
 
+#DOB
+year = str(random.randint(2003))
+day = str(random.randit(1,31))
 
 #Month
-time.sleep(2)
+time.sleep(.2)
 
 pg.hotkey('tab')
-pg.hotkey('down')
-pg.hotkey('enter')
+pg.hotkey('d')
+
+#Day
+pg.hotkey('tab')
+pg.typewrite(day,.2)
+
+#Year
+pg.hotkey('tab')
+pg.typewrite(year,.2)
+
+#Gender
+pg.hotkey('tab')
+pg.hotkey('r')
+pg.hotkey('tab')
+
+#mobile Phone
+pg.hotkey('tab')
+time.sleep(.2)
+
+#Current Email Address
+pg.hotkey('tab')
+time.sleep(.2)
+
+pg.typewrite('Flintstones31@gmail.com')
+
+#Location
+pg.hotkey('tab')
+pg.hotkey('tab')
+time.sleep(.2)
+#next step
+pg.hotkey('space')
+time.sleep(.2)
+
+#Accept Terms and Conditions
+
+pg.hotkey('tab')
+time.sleep(.2)
+pg.hotkey('tab')
+time.sleep(.2)
+pg.hotkey('tab')
+time.sleep(.2)
+pg.hotkey('tab')
+time.sleep(.2)
+
+pg.hotkey('space')
+
+pg.hotkey('tab')  
+time.sleep(.2)
+
+
+pg.hotkey('space')
+    
+
+#Verify Email (NEED PHONE)
+
+
+
